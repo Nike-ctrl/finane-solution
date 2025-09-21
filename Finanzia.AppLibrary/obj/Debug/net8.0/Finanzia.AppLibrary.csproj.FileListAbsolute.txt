@@ -1,0 +1,12 @@
+C:\Users\gagliardi\source\repos\FinanzaSolution\Finanzia.AppLibrary\bin\Debug\net8.0\Finanzia.AppLibrary.deps.json
+C:\Users\gagliardi\source\repos\FinanzaSolution\Finanzia.AppLibrary\bin\Debug\net8.0\Finanzia.AppLibrary.dll
+C:\Users\gagliardi\source\repos\FinanzaSolution\Finanzia.AppLibrary\bin\Debug\net8.0\Finanzia.AppLibrary.pdb
+C:\Users\gagliardi\source\repos\FinanzaSolution\Finanzia.AppLibrary\obj\Debug\net8.0\Finanzia.AppLibrary.csproj.AssemblyReference.cache
+C:\Users\gagliardi\source\repos\FinanzaSolution\Finanzia.AppLibrary\obj\Debug\net8.0\Finanzia.AppLibrary.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\gagliardi\source\repos\FinanzaSolution\Finanzia.AppLibrary\obj\Debug\net8.0\Finanzia.AppLibrary.AssemblyInfoInputs.cache
+C:\Users\gagliardi\source\repos\FinanzaSolution\Finanzia.AppLibrary\obj\Debug\net8.0\Finanzia.AppLibrary.AssemblyInfo.cs
+C:\Users\gagliardi\source\repos\FinanzaSolution\Finanzia.AppLibrary\obj\Debug\net8.0\Finanzia.AppLibrary.csproj.CoreCompileInputs.cache
+C:\Users\gagliardi\source\repos\FinanzaSolution\Finanzia.AppLibrary\obj\Debug\net8.0\Finanzia.AppLibrary.dll
+C:\Users\gagliardi\source\repos\FinanzaSolution\Finanzia.AppLibrary\obj\Debug\net8.0\refint\Finanzia.AppLibrary.dll
+C:\Users\gagliardi\source\repos\FinanzaSolution\Finanzia.AppLibrary\obj\Debug\net8.0\Finanzia.AppLibrary.pdb
+C:\Users\gagliardi\source\repos\FinanzaSolution\Finanzia.AppLibrary\obj\Debug\net8.0\ref\Finanzia.AppLibrary.dll

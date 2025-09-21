@@ -1,0 +1,96 @@
+﻿@using Finanze.Web.Components.Pages.DialogGestioneInserimenti
+@inherits LayoutComponentBase
+@inject IDialogService Dialog
+
+
+@* Required *@
+<MudThemeProvider Theme="MyCustomTheme" />
+<MudPopoverProvider />
+
+@* Needed for dialogs *@
+<MudDialogProvider />
+
+@* Needed for snackbars *@
+<MudSnackbarProvider />
+
+
+
+<MudLayout>
+    <MudAppBar Elevation="1">
+        <MudIconButton Icon="@Icons.Material.Filled.Menu" Color="Color.Inherit" Edge="Edge.Start" OnClick="@((e) => DrawerToggle())" />
+        <MudSpacer />
+        <div class="container-add-btn">
+        <MudIconButton Icon="@Icons.Material.Filled.Add" Color="Color.Inherit" Edge="Edge.End" OnClick="OpenDialog"/>
+        </div>
+        <MudSpacer />
+        <MudIconButton Icon="@Icons.Material.Filled.Logout" Color="Color.Inherit" Edge="Edge.End" OnClick="NavToLogout" />
+    </MudAppBar>
+    <MudDrawer @bind-Open="_drawerOpen" Elevation="2">
+        <MudDrawerHeader>
+            <MudText Typo="Typo.h5" Class="mt-1">Application</MudText>
+        </MudDrawerHeader>
+        <NavMenu />
+    </MudDrawer>
+    <MudMainContent>
+        <MudContainer MaxWidth="MaxWidth.False" Class="mt-5">
+            @Body
+            <div style="width:100%;height:150px;"></div>
+        </MudContainer>
+    </MudMainContent>
+</MudLayout>
+@code {
+
+    [Inject] NavigationManager NavigationManager { get; set; } = default!;
+
+    MudTheme MyCustomTheme = new MudTheme()
+        {
+            PaletteLight = new PaletteLight()
+            {
+                Primary = Colors.BlueGray.Default,
+                Secondary = Colors.Green.Accent4,
+                AppbarBackground = Colors.BlueGray.Default,
+            },
+            PaletteDark = new PaletteDark()
+            {
+                Primary = Colors.Blue.Lighten1
+            },
+
+            LayoutProperties = new LayoutProperties()
+            {
+                DrawerWidthLeft = "260px",
+                DrawerWidthRight = "300px"
+            }
+        };
+
+    bool _drawerOpen = true;
+
+    void DrawerToggle()
+    {
+        _drawerOpen = !_drawerOpen;
+    }
+
+    async Task OpenDialog()
+    {
+        DialogOptions options = new() { MaxWidth = MaxWidth.Medium, FullWidth = true, NoHeader = true, BackgroundClass = "blur-all" };
+        var dialog = await Dialog.ShowAsync<InsertDialog>("", options);
+        var result = await dialog.GetReturnValueAsync<bool?>();
+        if(result == null)
+        {
+            return;
+        }
+        if (result.Value)
+        {
+            // Ricarica la pagina forzando il reload completo
+            //StateHasChanged();
+             NavigationManager.NavigateTo(NavigationManager.Uri, forceLoad: true);
+        }
+
+    }
+
+
+    private void NavToLogout()
+    {
+        NavigationManager.NavigateTo("logout");
+
+    }
+}

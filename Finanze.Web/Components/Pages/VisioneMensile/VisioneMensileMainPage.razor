@@ -1,0 +1,12 @@
+﻿@page "/"
+@attribute [Authorize]
+<PageTitle>Visione Mensile</PageTitle>
+
+<SelezionePeriodoEConto SelectedContoId="IdRaggruppamentoConto"
+                        SelectedDatetime="DataSelezionePeriodo"
+                        OnSelectConto="HandleUpdateIdConto"
+                        OnSelectDate="HandleSelectedDatetime" />
+
+
+<VisioneMensileContent SelectedRaggruppamentoContoId="IdRaggruppamentoConto"
+                       SelectedDatetime="DataSelezionePeriodo" />

@@ -1,0 +1,41 @@
+﻿<MudGrid>
+    @if (OnlySingleDate)
+    {
+
+        <MudItem xs="12" md="4">
+            <MudDatePicker Label="Data dell ordine" @bind-Date="_dateStart" PickerClosed="@(() => SetSingleValue())" />
+        </MudItem>
+    }
+    else
+    {
+        <MudItem xs="12" md="3">
+            <MudCheckBox @bind-Value="MultiDate" Label="Ordine Permanente" />
+        </MudItem>
+        @if (MultiDate)
+        {
+            <MudItem xs="12" md="4">
+                <MudDateRangePicker Label="Range di date" @bind-DateRange="_dateRange" PickerClosed="@(() => SetValues())" />
+            </MudItem>
+
+            <MudItem xs="12" md="3">
+                <MudSelect T="int" @bind-Value="SelectedDay" Dense="true" Label="Selezione del giorno in cui ripetere l ordine">
+                    @foreach (var c in giorni)
+                    {
+                        <MudSelectItem T="int" Value="c">@c</MudSelectItem>
+                    }
+                </MudSelect>
+            </MudItem>
+        }
+        else
+        {
+            <MudItem xs="12" md="4">
+                <MudDatePicker Label="Data dell ordine" @bind-Date="_dateStart" PickerClosed="@(() => SetSingleValue())" />
+            </MudItem>
+        }
+
+    }
+
+
+
+
+</MudGrid>

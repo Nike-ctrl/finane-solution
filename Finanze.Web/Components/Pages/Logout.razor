@@ -1,0 +1,28 @@
+﻿@page "/logout"
+@using Microsoft.AspNetCore.Authentication
+@using Microsoft.AspNetCore.Authentication.Cookies
+@inject NavigationManager Navigation
+@inject IHttpContextAccessor HttpContextAccessor
+@inject HttpClient Http
+
+<h3>Logout...</h3>
+
+@code {
+    protected override async Task OnInitializedAsync()
+    {
+        Navigation.NavigateTo("/api/account/logout", forceLoad: true);
+        // await HttpContextAccessor.HttpContext.SignOutAsync(CookieAuthenticationDefaults.AuthenticationScheme);
+        // Navigation.NavigateTo("/login", true);
+
+        // // Nel componente Blazor (ad esempio in OnInitialized)
+        // var baseUri = Navigation.Uri; // es. https://localhost:5001/login
+
+        // var baseUrl = new Uri(baseUri).GetLeftPart(UriPartial.Authority);
+        // // https://localhost:5001
+
+        // Http.BaseAddress = new Uri(baseUrl);
+
+        // await Http.PostAsync("/api/account/logout", null);
+        // Navigation.NavigateTo("/login", forceLoad: true);
+    }
+}

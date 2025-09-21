@@ -1,0 +1,86 @@
+﻿<MudGrid Class="mt-lg-5 mt-sm-1">
+@*     <MudItem xs="12">
+        <MudFab Color="Color.Primary" StartIcon="@Icons.Material.Filled.Add" Size="Size.Small" OnClick="OpenDialog" />
+              
+    </MudItem> *@
+
+    <MudItem xs="12" md="4" />
+    <MudItem xs="12" md="4">
+        <MudSimpleTable Style="overflow-x: auto;" Elevation="0" Class="mb-lg-5 mb-sm-1" Dense="true">
+            <thead>
+                <tr>
+                    <th style="width:33%;">Entrate</th>
+                    <th style="width:33%;">Uscite</th>
+                    <th style="width:34%;">Risultato</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>@Entrate</td>
+                    <td>@Uscite</td>
+                    <td class="risultato-cella" style="background:@ColorDiff">@Diff</td>
+                </tr>
+            </tbody>
+        </MudSimpleTable>
+    </MudItem>
+    <MudItem xs="12" md="4" />
+
+    <MudGrid>
+        <MudItem xs="12" md="4">
+            <PiaCategorieChart Values="EntrateSomma"
+                               Entrate = "true"/>
+        </MudItem>
+        <MudItem xs="12" md="5">
+            <PiaCategorieChart Values="UsciteSomma"
+                               Entrate="false" />
+        </MudItem>
+        <MudItem xs="12" md="3">
+            <BarPosizioneChart Entrate="Entrate" Uscite="Uscite" Risultato="Diff" PresentData="DatiPresenti" />
+        </MudItem>
+    </MudGrid>
+
+
+
+    <MudItem xs="12">
+        <MudText>@SumSelectedItem</MudText>
+
+        <MudTable Elevation="0" T="view_sommario_transazioni" Items="transazioni" Hover="false" Dense="true" Breakpoint="Breakpoint.None" MultiSelection="true"
+                  @bind-SelectedItems="selectedItems"
+                  RowClass="cursor-pointer">
+            <HeaderContent>
+                <MudTh Style="width:10%;">Data</MudTh>
+                <MudTh Style="width:15%;">Conto</MudTh>
+                <MudTh Style="width:15%;">Categoria</MudTh>
+                <MudTh Style="width:10%;">Tipo</MudTh>
+                <MudTh Style="width:10%;">Entrate</MudTh>
+                <MudTh Style="width:10%;">Uscite</MudTh>
+                <MudTh Style="width:10%;">Commento</MudTh>
+                <MudTh Style="width:10%;">Trapasso</MudTh>
+                <MudTh Style="width:10%;">
+                    <MudFab Color="Color.Primary" StartIcon="@Icons.Material.Filled.Note" Size="Size.Small" OnClick="@(() => OpenNote())" />
+                    <MudFab Color="Color.Primary" StartIcon="@Icons.Material.Filled.Download" Size="Size.Small" OnClick="@(() => DonwlaodAll())" /></MudTh>
+            </HeaderContent>
+            <RowTemplate>
+                <MudTd DataLabel="Nr">@context.data?.ToString("dd.MM.yyyy")</MudTd>
+                <MudTd DataLabel="Nr">@context.conto_nome</MudTd>
+                <MudTd DataLabel="Sign">@context.categoria_nome</MudTd>
+                <MudTd DataLabel="Molar mass">@context.tipo_transazione_nome</MudTd>
+                <MudTd DataLabel="Entrate">@(context.tipo_transazione_id == 1 ? context.valore_reale : "")</MudTd>
+                <MudTd DataLabel="Uscite">@(context.tipo_transazione_id == 2 ? context.valore_reale : "")</MudTd>
+                <MudTd DataLabel="Commento">
+                    @if (!string.IsNullOrEmpty(context.descrizione))
+                    {
+                        <MudTooltip Text="@context.descrizione">
+                            <MudIcon Icon="@Icons.Material.Filled.Description" Style="font-size: 24px;" />
+                        </MudTooltip>
+                    }
+                </MudTd>
+                <MudTd DataLabel="Uscite">@(context.trapasso_id != null ? "SI" : "")</MudTd>
+                <MudTd DataLabel="Uscite">
+                    <MudFab Color="Color.Primary" StartIcon="@Icons.Material.Filled.Edit" Size="Size.Small" OnClick="@(() => EditContentAsync(context.transazione_id))" />
+                </MudTd>
+
+            </RowTemplate>
+        </MudTable>
+    </MudItem>
+</MudGrid>

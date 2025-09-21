@@ -1,0 +1,37 @@
+﻿<MudTable ServerData="ServerReload" Dense="true" Hover="true" @ref="table" Breakpoint="Breakpoint.None">
+    <ToolBarContent>
+        <MudText Typo="Typo.h6">Transazioni</MudText>
+        <MudSpacer />
+    </ToolBarContent>
+    <HeaderContent>
+        <MudTh Style="width:12.5%;">ID</MudTh>
+        <MudTh Style="width:12.5%;">Data</MudTh>
+        <MudTh Style="width:12.5%;">Creazione</MudTh>
+        <MudTh Style="width:12.5%;">Conto</MudTh>
+        <MudTh Style="width:12.5%;">Direzione</MudTh>
+        <MudTh Style="width:12.5%;">Categoria</MudTh>
+        <MudTh Style="width:12.5%;">Valore</MudTh>
+        <MudTh Style="width:12.5%;"><MudFab Color="Color.Primary" StartIcon="@Icons.Material.Filled.Download" Size="Size.Small" OnClick="@(() => DonwlaodAll())" /></MudTh>
+    </HeaderContent>
+    <RowTemplate>
+        <MudTd DataLabel="Nr">@context.transazione_id</MudTd>
+        <MudTd DataLabel="Sign">@context.data?.ToString("dd.MM.yyyy")</MudTd>
+        <MudTd DataLabel="Name">@context.creazione</MudTd>
+        <MudTd DataLabel="Position">@context.conto_nome</MudTd>
+        <MudTd DataLabel="Molar mass">@context.tipo_transazione_nome</MudTd>
+        <MudTd DataLabel="Molar mass">@context.categoria_nome</MudTd>
+        <MudTd DataLabel="Molar mass">@context.valore_reale</MudTd>
+        <MudTd DataLabel="Uscite">
+            <MudFab Color="Color.Primary" StartIcon="@Icons.Material.Filled.Edit" Size="Size.Small" OnClick="@(() => EditContentAsync(context.transazione_id))" />
+        </MudTd>
+    </RowTemplate>
+    <NoRecordsContent>
+        <MudText>No matching records found</MudText>
+    </NoRecordsContent>
+    <LoadingContent>
+        <MudText>Loading...</MudText>
+    </LoadingContent>
+    <PagerContent>
+        <MudTablePager />
+    </PagerContent>
+</MudTable>

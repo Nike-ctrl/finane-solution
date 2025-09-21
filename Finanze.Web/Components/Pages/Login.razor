@@ -1,0 +1,211 @@
+﻿@page "/login"
+@using Finanze.Web.Components.Layout
+@using Finanze.Web.Models
+            @layout LoginLayout
+@inject NavigationManager Navigation
+@inject HttpClient Http
+
+@* <h3>Login</h3>
+
+@if (error)
+{
+    <p style="color:red">Credenziali errate. Riprova.</p>
+}
+@if (errorsend)
+{
+    <p style="color:red">Errore nell inviare il codice</p>
+}
+
+@if (notsend)
+{
+    <p style="color:red">Invia prima il codice</p>
+}
+
+@if (send)
+{
+    <p style="color:forestgreen">Codice inviato</p>
+}
+
+<form method="post" action="/api/account/login">
+    <input name="code" type="text" placeholder="Codice" />
+    <button type="submit">Login</button>
+    <button type="button" @onclick="InviaCodice">Invia codice</button>
+</form> *@
+
+<style>
+
+    body, html {
+        height: 100%;
+        margin: 0;
+    }
+
+    body {
+        display: flex;
+        justify-content: center; /* centra orizzontalmente */
+        align-items: center; /* centra verticalmente */
+        background-color: #f0f0f0;
+        font-family: Arial, sans-serif;
+    }
+
+    .login-box {
+        background: white;
+        padding: 2rem;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .login-box {
+        width: 400px;
+        padding: 3rem;
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+        .login-box input,
+        .login-box button {
+            width: 100%;
+            padding: 0.5rem;
+            font-size: 1rem;
+            border-radius: 6px;
+            box-sizing: border-box;
+        }
+
+        .login-box input {
+            margin-bottom: 1rem;
+            border: 1px solid #ccc;
+        }
+
+    .button-group {
+        display: flex;
+        gap: 0.5rem; /* spazio tra i bottoni */
+    }
+
+        .button-group button {
+            flex: 1; /* entrambi i bottoni occupano la stessa larghezza */
+            border: none;
+            background-color: #007bff;
+            color: white;
+            cursor: pointer;
+        }
+
+            .button-group button:hover {
+                background-color: #0056b3;
+            }
+    h3{
+        margin-bottom:10px;
+    }
+</style>
+
+
+<div class="login-box">
+    @if (error)
+    {
+        <p style="color:red">Credenziali errate. Riprova.</p>
+    }
+    @if (errorsend)
+    {
+        <p style="color:red">Errore nell inviare il codice</p>
+    }
+
+    @if (notsend)
+    {
+        <p style="color:red">Invia prima il codice</p>
+    }
+
+    @if (exept)
+    {
+        <p style="color:red">Codice scaduto</p>
+    }
+
+    @if (send)
+    {
+        <p style="color:forestgreen">Codice inviato</p>
+    }
+    <h3>Login</h3>
+    <form method="post" action="/api/account/login">
+        <input name="code" type="text" placeholder="Codice" autocomplete="off" />
+        <div class="button-group">
+            <button type="submit">Login</button>
+            <button type="button" @onclick="InviaCodice">Invia codice</button>
+        </div>
+    </form>
+</div>
+
+
+
+@code {
+    /// <summary>
+    /// errore durante il login, password sbagliata
+    /// </summary>
+    private bool error = false;
+
+    /// <summary>
+    /// Messaggio inviato
+    /// </summary>
+    private bool send = false;
+
+
+    private bool errorsend = false;
+
+
+
+    /// <summary>
+    /// Non è stato inviato il codice
+    /// </summary>
+    private bool notsend = false;
+
+
+
+    /// <summary>
+    /// tempo superato
+    /// </summary>
+    private bool exept = false;
+
+
+
+    protected override void OnInitialized()
+    {
+        // Nel componente Blazor (ad esempio in OnInitialized)
+        var baseUri = Navigation.Uri; // es. https://localhost:5001/login
+        var baseUrl = new Uri(baseUri).GetLeftPart(UriPartial.Authority);
+        Http.BaseAddress = new Uri(baseUrl);
+
+        var uri = new Uri(Navigation.Uri);
+        var query = System.Web.HttpUtility.ParseQueryString(uri.Query);
+        if (query["error"] == "1")
+        {
+            error = true;
+        }
+
+        if (query["notsend"] == "1")
+        {
+            notsend = true;
+        }
+        if (query["exept"] == "1")
+        {
+            exept = true;
+        }
+
+    }
+
+    private async Task InviaCodice()
+    {
+        errorsend = false;
+        send = false;
+        error = false;
+        exept = false;
+        notsend = false;
+
+
+        var response = await Http.PostAsync($"/api/account/sendcode?dt={DateTime.Now.ToString("ddMMyyTHHmmss")}", null);
+        if (response.IsSuccessStatusCode)
+        {
+            send = true;
+        }
+        else
+        {
+            errorsend = true;
+        }
+    }
+}

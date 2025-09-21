@@ -1,0 +1,23 @@
+﻿<MudGrid>
+    <MudItem xs="12">
+        <BarChartCategorie Info="Info" Sommario="Sommario"></BarChartCategorie>
+
+    </MudItem>
+    <MudItem xs="12">
+        <MudTable Elevation="0" T="SommarioCategoriaPerConto" Items="Sommario" Hover="false" Dense="true" Breakpoint="Breakpoint.None"
+                  RowClass="cursor-pointer">
+            <HeaderContent>
+                <MudTh Style="width:33%;"><MudTableSortLabel SortBy="new Func<SommarioCategoriaPerConto, object>(x=>x.categoria_nome)">Categoria</MudTableSortLabel></MudTh>
+                <MudTh Style="width:33%;"><MudTableSortLabel SortBy="new Func<SommarioCategoriaPerConto, object>(x=>x.tipo_transazione_id)">Direzione</MudTableSortLabel></MudTh>
+                <MudTh Style="width:34%;"><MudTableSortLabel SortBy="new Func<SommarioCategoriaPerConto, object>(x=>x.sum_valore_reale_abs)">Valore Assoluto</MudTableSortLabel></MudTh>
+            </HeaderContent>
+            <RowTemplate>
+                <MudTd DataLabel="Sign">@context.categoria_nome</MudTd>
+                <MudTd DataLabel="Sign">@context.tipo_transazione_nome</MudTd>
+                <MudTd DataLabel="Nr">@context.sum_valore_reale_abs</MudTd>
+            </RowTemplate>
+        </MudTable>
+
+    </MudItem>
+
+</MudGrid>

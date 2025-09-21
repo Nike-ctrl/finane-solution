@@ -1,0 +1,371 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\gagli\\source\\repos\\finane-solution\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B81C8045-8BE8-4B35-90CB-C34690EDE772}|Finanze.Web\\Finanze.Web.csproj|c:\\users\\gagli\\source\\repos\\finane-solution\\finanze.web\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{B81C8045-8BE8-4B35-90CB-C34690EDE772}|Finanze.Web\\Finanze.Web.csproj|solutionrelative:finanze.web\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B81C8045-8BE8-4B35-90CB-C34690EDE772}|Finanze.Web\\Finanze.Web.csproj|c:\\users\\gagli\\source\\repos\\finane-solution\\finanze.web\\components\\pages\\visionemensile\\notedialogcomponent.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B81C8045-8BE8-4B35-90CB-C34690EDE772}|Finanze.Web\\Finanze.Web.csproj|solutionrelative:finanze.web\\components\\pages\\visionemensile\\notedialogcomponent.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B81C8045-8BE8-4B35-90CB-C34690EDE772}|Finanze.Web\\Finanze.Web.csproj|c:\\users\\gagli\\source\\repos\\finane-solution\\finanze.web\\components\\pages\\visionemensile\\notedialogcomponent.razor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B81C8045-8BE8-4B35-90CB-C34690EDE772}|Finanze.Web\\Finanze.Web.csproj|solutionrelative:finanze.web\\components\\pages\\visionemensile\\notedialogcomponent.razor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{31DE5A0E-D0F5-4AD1-A6B1-AA1BCB93025C}|Finanze.AccessDatabase\\Finanze.AccessDatabase.csproj|c:\\users\\gagli\\source\\repos\\finane-solution\\finanze.accessdatabase\\finanzeaccessdatabaseservice.note.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{31DE5A0E-D0F5-4AD1-A6B1-AA1BCB93025C}|Finanze.AccessDatabase\\Finanze.AccessDatabase.csproj|solutionrelative:finanze.accessdatabase\\finanzeaccessdatabaseservice.note.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9C14F39A-0F9E-4FD2-BFF9-CF671E97157E}|Finanza.Database\\Finanza.Database.csproj|c:\\users\\gagli\\source\\repos\\finane-solution\\finanza.database\\context\\finanzecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9C14F39A-0F9E-4FD2-BFF9-CF671E97157E}|Finanza.Database\\Finanza.Database.csproj|solutionrelative:finanza.database\\context\\finanzecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9C14F39A-0F9E-4FD2-BFF9-CF671E97157E}|Finanza.Database\\Finanza.Database.csproj|c:\\users\\gagli\\source\\repos\\finane-solution\\finanza.database\\readme.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
+      "RelativeMoniker": "D:0:0:{9C14F39A-0F9E-4FD2-BFF9-CF671E97157E}|Finanza.Database\\Finanza.Database.csproj|solutionrelative:finanza.database\\readme.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{31DE5A0E-D0F5-4AD1-A6B1-AA1BCB93025C}|Finanze.AccessDatabase\\Finanze.AccessDatabase.csproj|c:\\users\\gagli\\source\\repos\\finane-solution\\finanze.accessdatabase\\finanzeaccessdatabaseservice.transazioni.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{31DE5A0E-D0F5-4AD1-A6B1-AA1BCB93025C}|Finanze.AccessDatabase\\Finanze.AccessDatabase.csproj|solutionrelative:finanze.accessdatabase\\finanzeaccessdatabaseservice.transazioni.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B81C8045-8BE8-4B35-90CB-C34690EDE772}|Finanze.Web\\Finanze.Web.csproj|c:\\users\\gagli\\source\\repos\\finane-solution\\finanze.web\\components\\pages\\visionemensile\\visionemensilecontent.razor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B81C8045-8BE8-4B35-90CB-C34690EDE772}|Finanze.Web\\Finanze.Web.csproj|solutionrelative:finanze.web\\components\\pages\\visionemensile\\visionemensilecontent.razor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B81C8045-8BE8-4B35-90CB-C34690EDE772}|Finanze.Web\\Finanze.Web.csproj|c:\\users\\gagli\\source\\repos\\finane-solution\\finanze.web\\components\\pages\\dialoggestioneinserimenti\\confermaeliminazionedialog.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B81C8045-8BE8-4B35-90CB-C34690EDE772}|Finanze.Web\\Finanze.Web.csproj|solutionrelative:finanze.web\\components\\pages\\dialoggestioneinserimenti\\confermaeliminazionedialog.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B81C8045-8BE8-4B35-90CB-C34690EDE772}|Finanze.Web\\Finanze.Web.csproj|c:\\users\\gagli\\source\\repos\\finane-solution\\finanze.web\\components\\pages\\gestionetransazioni\\addcategoriedialog.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B81C8045-8BE8-4B35-90CB-C34690EDE772}|Finanze.Web\\Finanze.Web.csproj|solutionrelative:finanze.web\\components\\pages\\gestionetransazioni\\addcategoriedialog.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B81C8045-8BE8-4B35-90CB-C34690EDE772}|Finanze.Web\\Finanze.Web.csproj|c:\\users\\gagli\\source\\repos\\finane-solution\\finanze.web\\components\\pages\\visionemensile\\visionemensilecontent.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B81C8045-8BE8-4B35-90CB-C34690EDE772}|Finanze.Web\\Finanze.Web.csproj|solutionrelative:finanze.web\\components\\pages\\visionemensile\\visionemensilecontent.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B81C8045-8BE8-4B35-90CB-C34690EDE772}|Finanze.Web\\Finanze.Web.csproj|c:\\users\\gagli\\source\\repos\\finane-solution\\finanze.web\\components\\pages\\gestionetransazioni\\gestionetransazionecontent.razor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B81C8045-8BE8-4B35-90CB-C34690EDE772}|Finanze.Web\\Finanze.Web.csproj|solutionrelative:finanze.web\\components\\pages\\gestionetransazioni\\gestionetransazionecontent.razor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B81C8045-8BE8-4B35-90CB-C34690EDE772}|Finanze.Web\\Finanze.Web.csproj|c:\\users\\gagli\\source\\repos\\finane-solution\\finanze.web\\components\\pages\\visionemensile\\visionemensilemainpage.razor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B81C8045-8BE8-4B35-90CB-C34690EDE772}|Finanze.Web\\Finanze.Web.csproj|solutionrelative:finanze.web\\components\\pages\\visionemensile\\visionemensilemainpage.razor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B81C8045-8BE8-4B35-90CB-C34690EDE772}|Finanze.Web\\Finanze.Web.csproj|c:\\users\\gagli\\source\\repos\\finane-solution\\finanze.web\\components\\pages\\gestionetransazioni\\gestionetransazionimainpage.razor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B81C8045-8BE8-4B35-90CB-C34690EDE772}|Finanze.Web\\Finanze.Web.csproj|solutionrelative:finanze.web\\components\\pages\\gestionetransazioni\\gestionetransazionimainpage.razor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{31DE5A0E-D0F5-4AD1-A6B1-AA1BCB93025C}|Finanze.AccessDatabase\\Finanze.AccessDatabase.csproj|c:\\users\\gagli\\source\\repos\\finane-solution\\finanze.accessdatabase\\finanzeaccessdatabaseservice.conto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{31DE5A0E-D0F5-4AD1-A6B1-AA1BCB93025C}|Finanze.AccessDatabase\\Finanze.AccessDatabase.csproj|solutionrelative:finanze.accessdatabase\\finanzeaccessdatabaseservice.conto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B81C8045-8BE8-4B35-90CB-C34690EDE772}|Finanze.Web\\Finanze.Web.csproj|c:\\users\\gagli\\source\\repos\\finane-solution\\finanze.web\\components\\pages\\visionemensile\\visionemensilemainpage.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B81C8045-8BE8-4B35-90CB-C34690EDE772}|Finanze.Web\\Finanze.Web.csproj|solutionrelative:finanze.web\\components\\pages\\visionemensile\\visionemensilemainpage.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B81C8045-8BE8-4B35-90CB-C34690EDE772}|Finanze.Web\\Finanze.Web.csproj|c:\\users\\gagli\\source\\repos\\finane-solution\\finanze.web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B81C8045-8BE8-4B35-90CB-C34690EDE772}|Finanze.Web\\Finanze.Web.csproj|solutionrelative:finanze.web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B81C8045-8BE8-4B35-90CB-C34690EDE772}|Finanze.Web\\Finanze.Web.csproj|c:\\users\\gagli\\source\\repos\\finane-solution\\finanze.web\\components\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B81C8045-8BE8-4B35-90CB-C34690EDE772}|Finanze.Web\\Finanze.Web.csproj|solutionrelative:finanze.web\\components\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{31DE5A0E-D0F5-4AD1-A6B1-AA1BCB93025C}|Finanze.AccessDatabase\\Finanze.AccessDatabase.csproj|c:\\users\\gagli\\source\\repos\\finane-solution\\finanze.accessdatabase\\finanzeaccessdatabaseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{31DE5A0E-D0F5-4AD1-A6B1-AA1BCB93025C}|Finanze.AccessDatabase\\Finanze.AccessDatabase.csproj|solutionrelative:finanze.accessdatabase\\finanzeaccessdatabaseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 13,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{26341fe2-71dd-46fd-bb1b-2e51a92a0d64}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:132:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:133:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "NoteDialogComponent.razor",
+              "DocumentMoniker": "C:\\Users\\gagli\\source\\repos\\finane-solution\\Finanze.Web\\Components\\Pages\\VisioneMensile\\NoteDialogComponent.razor",
+              "RelativeDocumentMoniker": "Finanze.Web\\Components\\Pages\\VisioneMensile\\NoteDialogComponent.razor",
+              "ToolTip": "C:\\Users\\gagli\\source\\repos\\finane-solution\\Finanze.Web\\Components\\Pages\\VisioneMensile\\NoteDialogComponent.razor",
+              "RelativeToolTip": "Finanze.Web\\Components\\Pages\\VisioneMensile\\NoteDialogComponent.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAABcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-20T09:07:17.471Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "FinanzeAccessDatabaseService.Note.cs",
+              "DocumentMoniker": "C:\\Users\\gagli\\source\\repos\\finane-solution\\Finanze.AccessDatabase\\FinanzeAccessDatabaseService.Note.cs",
+              "RelativeDocumentMoniker": "Finanze.AccessDatabase\\FinanzeAccessDatabaseService.Note.cs",
+              "ToolTip": "C:\\Users\\gagli\\source\\repos\\finane-solution\\Finanze.AccessDatabase\\FinanzeAccessDatabaseService.Note.cs",
+              "RelativeToolTip": "Finanze.AccessDatabase\\FinanzeAccessDatabaseService.Note.cs",
+              "ViewState": "AgIAAFoAAAAAAAAAAAAowGQAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-20T09:07:48.109Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "AddCategorieDialog.razor",
+              "DocumentMoniker": "C:\\Users\\gagli\\source\\repos\\finane-solution\\Finanze.Web\\Components\\Pages\\GestioneTransazioni\\AddCategorieDialog.razor",
+              "RelativeDocumentMoniker": "Finanze.Web\\Components\\Pages\\GestioneTransazioni\\AddCategorieDialog.razor",
+              "ToolTip": "C:\\Users\\gagli\\source\\repos\\finane-solution\\Finanze.Web\\Components\\Pages\\GestioneTransazioni\\AddCategorieDialog.razor",
+              "RelativeToolTip": "Finanze.Web\\Components\\Pages\\GestioneTransazioni\\AddCategorieDialog.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-20T09:15:10.679Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "readme.md",
+              "DocumentMoniker": "C:\\Users\\gagli\\source\\repos\\finane-solution\\Finanza.Database\\readme.md",
+              "RelativeDocumentMoniker": "Finanza.Database\\readme.md",
+              "ToolTip": "C:\\Users\\gagli\\source\\repos\\finane-solution\\Finanza.Database\\readme.md",
+              "RelativeToolTip": "Finanza.Database\\readme.md",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2025-09-20T08:57:09.152Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "FinanzeContext.cs",
+              "DocumentMoniker": "C:\\Users\\gagli\\source\\repos\\finane-solution\\Finanza.Database\\Context\\FinanzeContext.cs",
+              "RelativeDocumentMoniker": "Finanza.Database\\Context\\FinanzeContext.cs",
+              "ToolTip": "C:\\Users\\gagli\\source\\repos\\finane-solution\\Finanza.Database\\Context\\FinanzeContext.cs",
+              "RelativeToolTip": "Finanza.Database\\Context\\FinanzeContext.cs",
+              "ViewState": "AgIAACQAAAAAAAAAAAAswDsAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-20T09:02:02.211Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "NoteDialogComponent.razor.cs",
+              "DocumentMoniker": "C:\\Users\\gagli\\source\\repos\\finane-solution\\Finanze.Web\\Components\\Pages\\VisioneMensile\\NoteDialogComponent.razor.cs",
+              "RelativeDocumentMoniker": "Finanze.Web\\Components\\Pages\\VisioneMensile\\NoteDialogComponent.razor.cs",
+              "ToolTip": "C:\\Users\\gagli\\source\\repos\\finane-solution\\Finanze.Web\\Components\\Pages\\VisioneMensile\\NoteDialogComponent.razor.cs",
+              "RelativeToolTip": "Finanze.Web\\Components\\Pages\\VisioneMensile\\NoteDialogComponent.razor.cs",
+              "ViewState": "AgIAAE8AAAAAAAAAAAAuwGYAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-20T09:07:28.192Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\gagli\\source\\repos\\finane-solution\\Finanze.Web\\appsettings.json",
+              "RelativeDocumentMoniker": "Finanze.Web\\appsettings.json",
+              "ToolTip": "C:\\Users\\gagli\\source\\repos\\finane-solution\\Finanze.Web\\appsettings.json",
+              "RelativeToolTip": "Finanze.Web\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-09-20T08:20:52.532Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "FinanzeAccessDatabaseService.Transazioni.cs",
+              "DocumentMoniker": "C:\\Users\\gagli\\source\\repos\\finane-solution\\Finanze.AccessDatabase\\FinanzeAccessDatabaseService.Transazioni.cs",
+              "RelativeDocumentMoniker": "Finanze.AccessDatabase\\FinanzeAccessDatabaseService.Transazioni.cs",
+              "ToolTip": "C:\\Users\\gagli\\source\\repos\\finane-solution\\Finanze.AccessDatabase\\FinanzeAccessDatabaseService.Transazioni.cs",
+              "RelativeToolTip": "Finanze.AccessDatabase\\FinanzeAccessDatabaseService.Transazioni.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAwwCUAAABiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-20T09:02:24.348Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "VisioneMensileContent.razor.cs",
+              "DocumentMoniker": "C:\\Users\\gagli\\source\\repos\\finane-solution\\Finanze.Web\\Components\\Pages\\VisioneMensile\\VisioneMensileContent.razor.cs",
+              "RelativeDocumentMoniker": "Finanze.Web\\Components\\Pages\\VisioneMensile\\VisioneMensileContent.razor.cs",
+              "ToolTip": "C:\\Users\\gagli\\source\\repos\\finane-solution\\Finanze.Web\\Components\\Pages\\VisioneMensile\\VisioneMensileContent.razor.cs",
+              "RelativeToolTip": "Finanze.Web\\Components\\Pages\\VisioneMensile\\VisioneMensileContent.razor.cs",
+              "ViewState": "AgIAAGMAAAAAAAAAAAASwHwAAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-20T08:22:06.041Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "VisioneMensileMainPage.razor.cs",
+              "DocumentMoniker": "C:\\Users\\gagli\\source\\repos\\finane-solution\\Finanze.Web\\Components\\Pages\\VisioneMensile\\VisioneMensileMainPage.razor.cs",
+              "RelativeDocumentMoniker": "Finanze.Web\\Components\\Pages\\VisioneMensile\\VisioneMensileMainPage.razor.cs",
+              "ToolTip": "C:\\Users\\gagli\\source\\repos\\finane-solution\\Finanze.Web\\Components\\Pages\\VisioneMensile\\VisioneMensileMainPage.razor.cs",
+              "RelativeToolTip": "Finanze.Web\\Components\\Pages\\VisioneMensile\\VisioneMensileMainPage.razor.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAowAkAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-20T09:05:27.347Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ConfermaEliminazioneDialog.razor",
+              "DocumentMoniker": "C:\\Users\\gagli\\source\\repos\\finane-solution\\Finanze.Web\\Components\\Pages\\DialogGestioneInserimenti\\ConfermaEliminazioneDialog.razor",
+              "RelativeDocumentMoniker": "Finanze.Web\\Components\\Pages\\DialogGestioneInserimenti\\ConfermaEliminazioneDialog.razor",
+              "ToolTip": "C:\\Users\\gagli\\source\\repos\\finane-solution\\Finanze.Web\\Components\\Pages\\DialogGestioneInserimenti\\ConfermaEliminazioneDialog.razor",
+              "RelativeToolTip": "Finanze.Web\\Components\\Pages\\DialogGestioneInserimenti\\ConfermaEliminazioneDialog.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-20T09:31:26.401Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "VisioneMensileContent.razor",
+              "DocumentMoniker": "C:\\Users\\gagli\\source\\repos\\finane-solution\\Finanze.Web\\Components\\Pages\\VisioneMensile\\VisioneMensileContent.razor",
+              "RelativeDocumentMoniker": "Finanze.Web\\Components\\Pages\\VisioneMensile\\VisioneMensileContent.razor",
+              "ToolTip": "C:\\Users\\gagli\\source\\repos\\finane-solution\\Finanze.Web\\Components\\Pages\\VisioneMensile\\VisioneMensileContent.razor",
+              "RelativeToolTip": "Finanze.Web\\Components\\Pages\\VisioneMensile\\VisioneMensileContent.razor",
+              "ViewState": "AgIAACkAAAAAAAAAAAAYwDwAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-20T09:04:33.654Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "GestioneTransazioniMainPage.razor.cs",
+              "DocumentMoniker": "C:\\Users\\gagli\\source\\repos\\finane-solution\\Finanze.Web\\Components\\Pages\\GestioneTransazioni\\GestioneTransazioniMainPage.razor.cs",
+              "RelativeDocumentMoniker": "Finanze.Web\\Components\\Pages\\GestioneTransazioni\\GestioneTransazioniMainPage.razor.cs",
+              "ToolTip": "C:\\Users\\gagli\\source\\repos\\finane-solution\\Finanze.Web\\Components\\Pages\\GestioneTransazioni\\GestioneTransazioniMainPage.razor.cs",
+              "RelativeToolTip": "Finanze.Web\\Components\\Pages\\GestioneTransazioni\\GestioneTransazioniMainPage.razor.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-20T09:22:54.386Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "GestioneTransazioneContent.razor.cs",
+              "DocumentMoniker": "C:\\Users\\gagli\\source\\repos\\finane-solution\\Finanze.Web\\Components\\Pages\\GestioneTransazioni\\GestioneTransazioneContent.razor.cs",
+              "RelativeDocumentMoniker": "Finanze.Web\\Components\\Pages\\GestioneTransazioni\\GestioneTransazioneContent.razor.cs",
+              "ToolTip": "C:\\Users\\gagli\\source\\repos\\finane-solution\\Finanze.Web\\Components\\Pages\\GestioneTransazioni\\GestioneTransazioneContent.razor.cs",
+              "RelativeToolTip": "Finanze.Web\\Components\\Pages\\GestioneTransazioni\\GestioneTransazioneContent.razor.cs",
+              "ViewState": "AgIAANQAAAAAAAAAAAAowKYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-20T09:22:56.986Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "FinanzeAccessDatabaseService.Conto.cs",
+              "DocumentMoniker": "C:\\Users\\gagli\\source\\repos\\finane-solution\\Finanze.AccessDatabase\\FinanzeAccessDatabaseService.Conto.cs",
+              "RelativeDocumentMoniker": "Finanze.AccessDatabase\\FinanzeAccessDatabaseService.Conto.cs",
+              "ToolTip": "C:\\Users\\gagli\\source\\repos\\finane-solution\\Finanze.AccessDatabase\\FinanzeAccessDatabaseService.Conto.cs",
+              "RelativeToolTip": "Finanze.AccessDatabase\\FinanzeAccessDatabaseService.Conto.cs",
+              "ViewState": "AgIAAJIAAAAAAAAAAAAIwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-20T09:07:33.217Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "FinanzeAccessDatabaseService.cs",
+              "DocumentMoniker": "C:\\Users\\gagli\\source\\repos\\finane-solution\\Finanze.AccessDatabase\\FinanzeAccessDatabaseService.cs",
+              "RelativeDocumentMoniker": "Finanze.AccessDatabase\\FinanzeAccessDatabaseService.cs",
+              "ToolTip": "C:\\Users\\gagli\\source\\repos\\finane-solution\\Finanze.AccessDatabase\\FinanzeAccessDatabaseService.cs",
+              "RelativeToolTip": "Finanze.AccessDatabase\\FinanzeAccessDatabaseService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-20T09:02:17.031Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "VisioneMensileMainPage.razor",
+              "DocumentMoniker": "C:\\Users\\gagli\\source\\repos\\finane-solution\\Finanze.Web\\Components\\Pages\\VisioneMensile\\VisioneMensileMainPage.razor",
+              "RelativeDocumentMoniker": "Finanze.Web\\Components\\Pages\\VisioneMensile\\VisioneMensileMainPage.razor",
+              "ToolTip": "C:\\Users\\gagli\\source\\repos\\finane-solution\\Finanze.Web\\Components\\Pages\\VisioneMensile\\VisioneMensileMainPage.razor",
+              "RelativeToolTip": "Finanze.Web\\Components\\Pages\\VisioneMensile\\VisioneMensileMainPage.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-20T09:05:14.238Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "_Imports.razor",
+              "DocumentMoniker": "C:\\Users\\gagli\\source\\repos\\finane-solution\\Finanze.Web\\Components\\_Imports.razor",
+              "RelativeDocumentMoniker": "Finanze.Web\\Components\\_Imports.razor",
+              "ToolTip": "C:\\Users\\gagli\\source\\repos\\finane-solution\\Finanze.Web\\Components\\_Imports.razor",
+              "RelativeToolTip": "Finanze.Web\\Components\\_Imports.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-20T09:02:31.859Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\gagli\\source\\repos\\finane-solution\\Finanze.Web\\Program.cs",
+              "RelativeDocumentMoniker": "Finanze.Web\\Program.cs",
+              "ToolTip": "C:\\Users\\gagli\\source\\repos\\finane-solution\\Finanze.Web\\Program.cs",
+              "RelativeToolTip": "Finanze.Web\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-20T08:21:33.945Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

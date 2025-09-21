@@ -1,0 +1,44 @@
+﻿
+@inject VersionStaticFileService version
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <base href="/" />
+    <link rel="stylesheet" href="app.css?version=@version.GetVersion()" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+    <link href="_content/MudBlazor/MudBlazor.min.css?v=@(MudBlazor.Metadata.Version)" rel="stylesheet" />
+    <link rel="icon" type="image/png" href="p.png" />
+@*     <link rel="icon" type="image/png" href="https://img.pokemondb.net/sprites/silver/normal/gengar.png" /> *@
+    
+    <script src="/plotly.js/plotly.min.js"></script>
+    <script src="/plotly.js/myplotly.js?v=@(MudBlazor.Metadata.Version)"></script>
+    <script src="/finanzaportal.js?v=@(MudBlazor.Metadata.Version)"></script>
+    @* <HeadOutlet /> *@
+    <HeadOutlet @rendermode="@RenderMode.InteractiveServer" />
+</head>
+
+<body>
+    <Routes />
+    @* <script src="_framework/blazor.web.js"></script> *@
+    <script src="_framework/blazor.web.js" autostart="false"></script>
+    <script>
+        Blazor.start({
+            circuit: {
+                reconnectionHandler: {
+                    onConnectionDown: () => document.location.reload(),
+                    onConnectionUp: () => document.location.reload(),
+                    onConnectionFailed: () => document.location.reload()
+                }
+            }
+        });
+    </script>
+
+    <script src="_content/MudBlazor/MudBlazor.min.js?v=@(MudBlazor.Metadata.Version)"></script>
+</body>
+
+</html>

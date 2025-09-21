@@ -1,0 +1,22 @@
+﻿@page "/andamento"
+@attribute [Authorize]
+<PageTitle>Andamento</PageTitle>
+
+<MudGrid>
+    <MudItem xs="12" md="6">
+        <SelezioneConto SelectedContoId="raggruppamentoId" OnSelectConto="HandleSelectedRaggruppamento" />
+    </MudItem>
+
+
+    <MudItem xs="12" md="6">
+        <SelectAnno OnSelectYear="HandleSelectedYear" StartYear="_anno" />
+    </MudItem>
+
+    <MudItem xs="12">
+        <AndamentoChart SelectedRaggruppamento="raggruppamentoId" Year="_anno" />
+    </MudItem>
+
+    <MudItem xs="12">
+        <AndamentoTable SelectedRaggruppamento="raggruppamentoId" Year="_anno" /> 
+    </MudItem>
+</MudGrid>

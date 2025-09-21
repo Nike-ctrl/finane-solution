@@ -1,0 +1,13 @@
+﻿@page "/gestione_transazioni"
+
+@attribute [Authorize]
+<PageTitle>Gestioni</PageTitle>
+
+<MudTabs Elevation="0" Rounded="false" ApplyEffectsToContainer="true" PanelClass="pt-6">
+    <MudTabPanel Text="Transazione">
+        <GestioneTransazioneContent Trapasso="false"/>
+    </MudTabPanel>
+    <MudTabPanel Text="Trapasso">
+        <GestioneTransazioneContent Trapasso="true" />
+    </MudTabPanel>
+</MudTabs>

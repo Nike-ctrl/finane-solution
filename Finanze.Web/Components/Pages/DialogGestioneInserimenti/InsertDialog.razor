@@ -1,0 +1,20 @@
+﻿@using Finanze.Web.Components.Pages.GestioneTransazioni
+<MudDialog>
+    <DialogContent>
+        <MudTabs Elevation="0" Rounded="false" ApplyEffectsToContainer="true" PanelClass="pt-6">
+            <MudTabPanel Text="Transazione">
+                <GestioneTransazioneContent Trapasso="false" OnEndInsert="EndInsert" />
+            </MudTabPanel>
+            <MudTabPanel Text="Trapasso">
+                <GestioneTransazioneContent Trapasso="true" OnEndInsert="EndInsert" />
+            </MudTabPanel>
+        </MudTabs>
+    </DialogContent>
+</MudDialog>
+@code {
+    [CascadingParameter]
+    private IMudDialogInstance MudDialog { get; set; }
+
+    private void EndInsert(int i) => MudDialog.Close(DialogResult.Ok(true));
+
+}

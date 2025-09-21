@@ -1,0 +1,22 @@
+﻿<MudGrid>
+    <MudItem xs="12" md="6">
+        <div class="container-selezione-periodo">
+            <div class="box"><MudFab Color="Color.Primary" StartIcon="@Icons.Material.Filled.ArrowLeft" OnClick="@(() => ChangeMonth(-1))" /></div>
+            <div class="box center"><b>@SelectedDatetime.ToString("MM.yyyy")</b></div>
+            <div class="box"><MudFab Color="Color.Primary" StartIcon="@Icons.Material.Filled.ArrowRight" OnClick="@(() => ChangeMonth(1))" /></div>
+        </div>
+
+    </MudItem>
+
+
+    <MudItem xs="12" md="6">
+        <MudSelect  T="string" @bind-Value="SelectedContoNome" Dense="true"  Label="Selezione del conto">
+            @foreach (var c in Conti)
+            {
+                <MudSelectItem T="string" Value="c.raggruppamento_conto_nome">@c.raggruppamento_conto_nome</MudSelectItem>
+            }
+        </MudSelect>
+    </MudItem>
+
+</MudGrid>
+

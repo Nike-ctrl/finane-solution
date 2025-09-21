@@ -1,0 +1,57 @@
+﻿@using CSharpFunctionalExtensions
+<MudDialog>
+    <DialogContent>
+        <MudGrid>
+            <MudItem xs="12">Aggiungi Categoria</MudItem>
+            @if (_showMessage)
+            {
+                <MudItem xs="12">
+                    <MudAlert Severity="Severity.Error">@ErroreMessage</MudAlert>
+                </MudItem>
+            }
+            <MudItem xs="12">
+                <MudTextField @bind-Value="Categoria" Label="Nuova categoria" Variant="Variant.Text"></MudTextField>
+            </MudItem>
+        </MudGrid>
+    </DialogContent>
+    <DialogActions>
+        <MudButton OnClick="Cancel">Cancel</MudButton>
+        <MudButton Color="Color.Primary" OnClick="Submit">Aggiungi</MudButton>
+
+    </DialogActions>
+</MudDialog>
+@code {
+    [CascadingParameter]
+    private IMudDialogInstance MudDialog { get; set; }
+
+    [Inject]
+    public required FinanzeAccessDatabaseService serviceDb { get; set; }
+
+    private string Categoria = string.Empty;
+
+    private string ErroreMessage = string.Empty;
+
+    private bool _showMessage { get { return !string.IsNullOrEmpty(ErroreMessage); } }
+
+    private async Task Submit()
+    {
+
+        ErroreMessage = string.Empty;
+        if (string.IsNullOrEmpty(Categoria))
+        {
+            ErroreMessage = "Inserire una categoria";
+            return;
+        }
+
+        Result result = await serviceDb.AddCategoriaAsync(Categoria);
+        if (result.IsFailure)
+        {
+            ErroreMessage = result.Error;
+            return;
+        }
+        MudDialog.Close(DialogResult.Ok(true));
+
+    }
+
+    private void Cancel() => MudDialog.Cancel();
+}

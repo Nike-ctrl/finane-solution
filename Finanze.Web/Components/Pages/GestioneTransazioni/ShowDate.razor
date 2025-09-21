@@ -1,0 +1,11 @@
+﻿<MudGrid>
+    @foreach (var item in Date)
+    {
+        <MudItem xs="3" md="2"><div class="element-date-show">@item.ToString("dd.MM.yyyy")</div></MudItem>
+    }
+</MudGrid>
+
+@code {
+    [Parameter]
+    public List<DateTime> Date { get; set; }
+}

@@ -1,0 +1,127 @@
+﻿<MudGrid>
+    @if (Info.ShowMessage)
+    {
+        <MudItem xs="12">
+            <MudAlert Severity="Info.Severity">@Info.Message</MudAlert>
+        </MudItem>
+    }
+
+@*     @Info.Render *@
+
+    <MudItem xs="12">
+        <SelettoreDate OnlySingleDate="OnlySingleDate" StartDate="StartDate" OnSelectDateList="HandleListDates" />
+    </MudItem>
+    <MudItem xs="12">
+        <ShowDate Date="@SelectedDate"></ShowDate>
+    </MudItem>
+    @if (Trapasso)
+    {
+        <MudItem xs="12" md="6">
+            <MudSelect T="string" @bind-Value="NuovoTrapasso.SelectedContoSorgente" Dense="true" Label="Selezione del conto Sorgente">
+                @foreach (var c in NuovoTrapasso.conti)
+                {
+                    <MudSelectItem T="string" Value="c.conto_nome">@c.conto_nome</MudSelectItem>
+                }
+            </MudSelect>
+        </MudItem>
+        <MudItem xs="12" md="6">
+            <MudSelect T="string" @bind-Value="NuovoTrapasso.SelectedContoDestinazione" Dense="true" Label="Selezione del conto Destinazione">
+                @foreach (var c in NuovoTrapasso.conti)
+                {
+                    <MudSelectItem T="string" Value="c.conto_nome">@c.conto_nome</MudSelectItem>
+                }
+            </MudSelect>
+        </MudItem>
+
+        <MudItem xs="11" md="5">
+            <MudSelect T="string" @bind-Value="NuovoTrapasso.SelectedCategoria" Dense="true" Label="Selezione della categoria">
+                @foreach (var c in NuovoTrapasso.categorie)
+                {
+                    <MudSelectItem T="string" Value="c.categoria_nome">@c.categoria_nome</MudSelectItem>
+                }
+            </MudSelect>
+        </MudItem>
+        <MudItem xs="1" md="1">
+            <MudIconButton Icon="@Icons.Material.Filled.Add" Color="Color.Inherit" Edge="Edge.End" OnClick="AddCategorie" />
+        </MudItem>
+
+
+        <MudItem xs="12" md="6">
+            <MudNumericField @bind-Value="NuovoTrapasso.Value" Label="Valore trapasso" Min="0"></MudNumericField>
+        </MudItem>
+
+        <MudItem xs="12" md="12">
+            <MudTextField @bind-Value="NuovoTrapasso.Descrizione"  Label="Descrizione" ></MudTextField>
+        </MudItem>
+
+        <MudItem xs="12" md="12">
+            <MudButton OnClick="InsertTrapasso" Color="Color.Primary">Inserisci Trapasso</MudButton>
+        </MudItem>
+
+
+    }
+    else
+    {
+        if(IdTransazione > 0 && LinkedTransaction.Any())
+        
+        { <MudItem xs="12">
+            <LinkedTransazioniTable Transazioni="LinkedTransaction"></LinkedTransazioniTable>
+            </MudItem>
+        }
+
+        <MudItem xs="12" md="6">
+            <MudSelect T="string" @bind-Value="NuovaTransazione.SelectedContoSorgente" Dense="true" Label="Selezione del conto Sorgente">
+                @foreach (var c in NuovaTransazione.conti)
+                {
+                    <MudSelectItem T="string" Value="c.conto_nome">@c.conto_nome</MudSelectItem>
+                }
+            </MudSelect>
+        </MudItem>
+        <MudItem xs="12" md="6">
+            <MudSelect T="string" @bind-Value="NuovaTransazione.SelectedTipo" Dense="true" Label="Selezione tipologia" ReadOnly="BlockType">
+                @foreach (var c in NuovaTransazione.tipologie)
+                {
+                    <MudSelectItem T="string" Value="c.tipo_transazione_nome">@c.tipo_transazione_nome</MudSelectItem>
+                }
+            </MudSelect>
+        </MudItem>
+
+        <MudItem xs="11" md="5">
+            <MudSelect T="string" @bind-Value="NuovaTransazione.SelectedCategoria" Dense="true" Label="Selezione della categoria">
+                @foreach (var c in NuovaTransazione.categorie)
+                {
+                    <MudSelectItem T="string" Value="c.categoria_nome">@c.categoria_nome</MudSelectItem>
+                }
+            </MudSelect>
+        </MudItem>
+        <MudItem xs="1" md="1">
+            <MudIconButton Icon="@Icons.Material.Filled.Add" Color="Color.Inherit" Edge="Edge.End" OnClick="AddCategorie" />
+        </MudItem>
+
+        <MudItem xs="12" md="6">
+            <MudNumericField @bind-Value="NuovaTransazione.Value" Label="Valore trapasso" Min="0"></MudNumericField>
+        </MudItem>
+
+        <MudItem xs="12" md="12">
+            <MudTextField @bind-Value="NuovaTransazione.Descrizione" Label="Descrizione"></MudTextField>
+        </MudItem>
+
+        if(IdTransazione > 0)
+        {
+            <MudItem xs="12" md="12">
+                <MudButton OnClick="EditTransazione" Color="Color.Primary">Modifica Transazione</MudButton>
+                <MudButton OnClick="DeleteTransazione" Color="Color.Error">Elimina Transazione</MudButton>
+            </MudItem>
+        }
+        else
+        {
+            <MudItem xs="12" md="12">
+                <MudButton OnClick="InsertTransazione" Color="Color.Primary">Inserisci Transazione</MudButton>
+            </MudItem>
+        }
+
+
+    }
+
+
+</MudGrid>

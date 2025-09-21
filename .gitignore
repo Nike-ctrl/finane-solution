@@ -1,0 +1,8 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs/finanze_solution/FileContentIndex/70165eb5-2f70-4279-8850-f6e88a411e39.vsidx
+*.vsidx
+/appsettings.json
+/Finanze.Web/appsettings.json

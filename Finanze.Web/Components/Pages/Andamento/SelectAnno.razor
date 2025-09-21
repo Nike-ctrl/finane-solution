@@ -1,0 +1,6 @@
+﻿<MudSelect T="int" @bind-Value="SelectedYear" Dense="true" Label="Seleziona anno">
+    @foreach (var c in Years)
+    {
+        <MudSelectItem T="int" Value="c">@c</MudSelectItem>
+    }
+</MudSelect>

@@ -1,0 +1,17 @@
+﻿<MudTable Elevation="0" T="ValoreCumulativoMensileConDifferenza" Items="_values" Hover="false" Dense="true" Breakpoint="Breakpoint.None"
+          RowClass="cursor-pointer"
+          RowClassFunc="GetRowClass">
+    <HeaderContent>
+        <MudTh Style="width:25%;">Data</MudTh>
+        <MudTh Style="width:25%;">Cumulativo</MudTh>
+        <MudTh Style="width:25%;">Incremento rispetto al primo</MudTh>
+        <MudTh Style="width:25%;">Versamento effettivo mensile</MudTh>
+    </HeaderContent>
+    <RowTemplate>
+        <MudTd DataLabel="Nr">@context.data.ToString("MM.yyyy")</MudTd>
+        <MudTd DataLabel="Nr">@context.valore_cumulativo.ToString("N2", _culture)</MudTd>
+        <MudTd DataLabel="Nr">@context.differenza_col_primo.ToString("N2", _culture)</MudTd>
+        <MudTd DataLabel="Sign">@context.valore_mensile.ToString("N2", _culture)</MudTd>
+
+    </RowTemplate>
+</MudTable>

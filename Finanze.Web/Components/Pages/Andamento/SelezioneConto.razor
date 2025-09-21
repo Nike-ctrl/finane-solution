@@ -1,0 +1,6 @@
+﻿<MudSelect T="string" @bind-Value="SelectedContoNome" Dense="true" Label="Selezione del raggruppamento di conti">
+    @foreach (var c in Conti)
+    {
+        <MudSelectItem T="string" Value="c.raggruppamento_conto_nome">@c.raggruppamento_conto_nome</MudSelectItem>
+    }
+</MudSelect>

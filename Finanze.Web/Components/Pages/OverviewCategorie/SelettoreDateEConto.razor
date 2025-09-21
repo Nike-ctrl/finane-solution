@@ -1,0 +1,17 @@
+﻿<MudGrid>
+    <MudItem xs="12" md="4">
+        <MudDatePicker Label="Inizio" @bind-Date="_dateStart" PickerClosed="@(() => SetStart())" />
+    </MudItem>   
+    <MudItem xs="12" md="4">
+        <MudDatePicker Label="Fine" @bind-Date="_dateEnd" PickerClosed="@(() => SetEnd())" />
+    </MudItem>   
+    <MudItem xs="12" md="4">
+        <MudSelect T="string" @bind-Value="SelectedContoNome" Dense="true" Label="Selezione del conto">
+            @foreach (var c in Conti)
+            {
+                <MudSelectItem T="string" Value="c.conto_nome">@c.conto_nome</MudSelectItem>
+            }
+        </MudSelect>
+    </MudItem>
+
+</MudGrid>

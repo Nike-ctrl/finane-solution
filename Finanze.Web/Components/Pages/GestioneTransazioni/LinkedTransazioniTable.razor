@@ -1,0 +1,38 @@
+﻿<MudTable Elevation="0" T="view_sommario_transazioni" Items="Transazioni" Hover="false" Dense="true" Breakpoint="Breakpoint.None"
+          RowClass="cursor-pointer">
+    <ToolBarContent>
+        <MudText Typo="Typo.h6">Transazioni vincolate</MudText>
+        <MudSpacer />
+    </ToolBarContent>
+    <HeaderContent>
+        <MudTh Style="width:10%;">Data</MudTh>
+        <MudTh Style="width:15%;">Conto</MudTh>
+        <MudTh Style="width:15%;">Categoria</MudTh>
+        <MudTh Style="width:10%;">Tipo</MudTh>
+        <MudTh Style="width:10%;">Entrate</MudTh>
+        <MudTh Style="width:20%;">Uscite</MudTh>
+        <MudTh Style="width:20%;">Commento</MudTh>
+
+    </HeaderContent>
+    <RowTemplate>
+        <MudTd DataLabel="Nr">@context.data?.ToString("dd.MM.yyyy")</MudTd>
+        <MudTd DataLabel="Nr">@context.conto_nome</MudTd>
+        <MudTd DataLabel="Sign">@context.categoria_nome</MudTd>
+        <MudTd DataLabel="Molar mass">@context.tipo_transazione_nome</MudTd>
+        <MudTd DataLabel="Entrate">@(context.tipo_transazione_id == 1 ? context.valore_reale : "")</MudTd>
+        <MudTd DataLabel="Uscite">@(context.tipo_transazione_id == 2 ? context.valore_reale : "")</MudTd>
+        <MudTd DataLabel="Commento">
+            @if (!string.IsNullOrEmpty(context.descrizione))
+            {
+                <MudTooltip Text="@context.descrizione">
+                    <MudIcon Icon="@Icons.Material.Filled.Description" Style="font-size: 12px;" />
+                </MudTooltip>
+            }
+        </MudTd>
+
+    </RowTemplate>
+</MudTable>
+@code {
+    [Parameter]
+    public List<view_sommario_transazioni> Transazioni { get; set; }
+}

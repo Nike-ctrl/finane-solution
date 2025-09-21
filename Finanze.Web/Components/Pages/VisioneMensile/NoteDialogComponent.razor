@@ -1,0 +1,42 @@
+﻿<MudDialog>
+    <DialogContent>
+        <MudGrid>
+            @if (showAddNew)
+            {
+                <MudItem xs="12">
+                    <MudTextField Label="Testo Nota" @bind-Value=nuovaNota.testo_nota></MudTextField>
+                </MudItem>
+                <MudItem xs="12">
+                    <MudButton Class="mb-2" Color="Color.Primary" Variant="Variant.Filled" OnClick="@(() => InsertNote())">Inserisci Nota</MudButton>
+                </MudItem>
+            }
+
+
+            <MudItem xs="12">
+                <MudText Typo="Typo.h6">Lista Note</MudText>
+                <MudTable Elevation="0" T="nota" Items="AllNote" Hover="false" Dense="true" Breakpoint="Breakpoint.None">
+                    <HeaderContent>
+                        <MudTh Style="width:20%;">Data</MudTh>
+                        <MudTh Style="width:70%;">Testo</MudTh>
+                        <MudTh Style="width:10%;">
+                            <MudFab Color="Color.Primary" StartIcon="@Icons.Material.Filled.Add" Size="Size.Small" OnClick="@(() => ShowAddNote())" />
+                        </MudTh>
+                    </HeaderContent>
+                    <RowTemplate>
+                        <MudTd DataLabel="Nr">@context.creation.ToString("dd.MM.yyyy")</MudTd>
+                        <MudTd DataLabel="Nr">@context.testo_nota</MudTd>
+                        <MudTd>
+                            <MudFab Class="mb-2" Color="Color.Error" StartIcon="@Icons.Material.Filled.Delete" Size="Size.Small" OnClick="@(() => DeleteNoteById(context.nota_id))" />
+                        </MudTd>
+                    </RowTemplate>
+                </MudTable>
+            </MudItem>
+            <MudItem xs="12">
+            </MudItem>
+        </MudGrid>
+    </DialogContent>
+    <DialogActions>
+        <MudButton OnClick="Cancel">Chiudi</MudButton>
+
+    </DialogActions>
+</MudDialog>
