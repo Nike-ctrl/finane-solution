@@ -6,3 +6,5 @@
 *.vsidx
 /appsettings.json
 /Finanze.Web/appsettings.json
+/Finanze.Web/bin
+/Finanze.Web/obj
