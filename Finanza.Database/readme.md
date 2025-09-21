@@ -9,7 +9,7 @@ dotnet ef dbcontext scaffold "Host=192.170.170.153;Port=5435;Database=finanze;Us
 
 
 
-
+```
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
         IConfigurationRoot configuration = new ConfigurationBuilder()
@@ -23,11 +23,15 @@ dotnet ef dbcontext scaffold "Host=192.170.170.153;Port=5435;Database=finanze;Us
         }
         optionsBuilder.UseNpgsql(conn);
     }
+```
 
 
-        <PackageReference Include="Npgsql" Version="9.0.3" />
-    <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="9.0.4" />
-	  <PackageReference Include="Microsoft.Extensions.Configuration.FileExtensions" Version="8.0.0" />
-	  <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="8.0.0" />
-	  <PackageReference Include="Microsoft.Extensions.Configuration" Version="8.0.0" />
-	  <PackageReference Include="Dapper" Version="2.1.66" />
+## backup 
+
+cd 'C:\Program Files\pgAdmin 4\runtime'
+.\pg_dump.exe -U myuser -h serverhome -p 5435 -d finanze -n public  -F c -b -v -f "C:\Users\gagli\Desktop\dati_finanze.dump"
+
+
+## restore 
+cd 'C:\Program Files\pgAdmin 4\runtime'
+.\pg_restore.exe -U myuser -h serverhome -p 5436 -d mydatabase -v "C:\Users\gagli\Desktop\dati_finanze.dump"
